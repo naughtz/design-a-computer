@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Jul 11 09:58:06 2018
+| Date         : Thu Jul 12 10:51:31 2018
 | Host         : DESKTOP-3QG18OL running 64-bit major release  (build 9200)
 | Command      : report_utilization -file computer_utilization_synth.rpt -pb computer_utilization_synth.pb
 | Design       : computer
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  626 |     0 |     20800 |  3.01 |
-|   LUT as Logic             |  578 |     0 |     20800 |  2.78 |
+| Slice LUTs*                |  630 |     0 |     20800 |  3.03 |
+|   LUT as Logic             |  582 |     0 |     20800 |  2.80 |
 |   LUT as Memory            |   48 |     0 |      9600 |  0.50 |
 |     LUT as Distributed RAM |   48 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
@@ -148,17 +148,17 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  385 |                 LUT |
+| LUT6     |  387 |                 LUT |
 | FDRE     |  204 |        Flop & Latch |
-| LUT5     |  130 |                 LUT |
+| LUT5     |  133 |                 LUT |
 | LDCE     |  117 |        Flop & Latch |
 | RAMD32   |   72 |  Distributed Memory |
-| LUT4     |   63 |                 LUT |
+| LUT4     |   61 |                 LUT |
 | OBUF     |   40 |                  IO |
 | MUXF7    |   35 |               MuxFx |
 | RAMS32   |   24 |  Distributed Memory |
 | LUT3     |   16 |                 LUT |
-| LUT2     |   13 |                 LUT |
+| LUT2     |   12 |                 LUT |
 | CARRY4   |    8 |          CarryLogic |
 | IBUF     |    6 |                  IO |
 | BUFG     |    2 |               Clock |

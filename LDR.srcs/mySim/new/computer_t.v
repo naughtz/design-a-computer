@@ -25,15 +25,15 @@ module computer_t();
         
     always #5 clk = ~clk;
     initial
-    begin reset = 0; clk = 0;
-        #200
-        reset = 1;
+    begin reset = 1; clk = 0;
         #200
         reset = 0;
-        #2000
-        keys = 5'b00001;
-        #2000
-        keys = 5'b00000;
+        #200
+        reset = 1;
+        //#2000
+        //keys = 5'b00001;
+        //#2000
+        //keys = 5'b00000;
     end
 
 endmodule

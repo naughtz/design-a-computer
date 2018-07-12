@@ -1,9 +1,9 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Tue Jul 10 15:27:57 2018
+-- Date        : Thu Jul 12 10:39:29 2018
 -- Host        : DESKTOP-3QG18OL running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub F:/LDR/LDR.srcs/sources_1/ip/dat_mem/dat_mem_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub F:/LDR/LDR/LDR.srcs/sources_1/ip/dat_mem/dat_mem_stub.vhdl
 -- Design      : dat_mem
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcsg324-1

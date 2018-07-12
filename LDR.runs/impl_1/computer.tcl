@@ -69,16 +69,16 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir F:/LDR/LDR.cache/wt [current_project]
-  set_property parent.project_path F:/LDR/LDR.xpr [current_project]
-  set_property ip_output_repo F:/LDR/LDR.cache/ip [current_project]
+  set_property webtalk.parent_dir F:/LDR/LDR/LDR.cache/wt [current_project]
+  set_property parent.project_path F:/LDR/LDR/LDR.xpr [current_project]
+  set_property ip_output_repo F:/LDR/LDR/LDR.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet F:/LDR/LDR.runs/synth_1/computer.dcp
-  read_ip -quiet F:/LDR/LDR.srcs/sources_1/ip/dat_mem/dat_mem.xci
-  read_ip -quiet F:/LDR/LDR.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-  read_ip -quiet F:/LDR/LDR.srcs/sources_1/ip/ins_mem/ins_mem.xci
-  read_xdc F:/LDR/LDR.srcs/constrs_1/new/design201807041105.xdc
+  add_files -quiet F:/LDR/LDR/LDR.runs/synth_1/computer.dcp
+  read_ip -quiet F:/LDR/LDR/LDR.srcs/sources_1/ip/ins_mem/ins_mem.xci
+  read_ip -quiet F:/LDR/LDR/LDR.srcs/sources_1/ip/dat_mem/dat_mem.xci
+  read_ip -quiet F:/LDR/LDR/LDR.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_xdc F:/LDR/LDR/LDR.srcs/constrs_1/new/design201807041105.xdc
   link_design -top computer -part xc7a35tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

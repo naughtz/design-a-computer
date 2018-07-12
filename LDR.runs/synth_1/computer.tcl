@@ -24,40 +24,40 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir F:/LDR/LDR.cache/wt [current_project]
-set_property parent.project_path F:/LDR/LDR.xpr [current_project]
+set_property webtalk.parent_dir F:/LDR/LDR/LDR.cache/wt [current_project]
+set_property parent.project_path F:/LDR/LDR/LDR.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo f:/LDR/LDR.cache/ip [current_project]
+set_property ip_output_repo f:/LDR/LDR/LDR.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files F:/LDR/LDR.srcs/sources_1/ip/ins_mem/test_rom.coe
-add_files F:/LDR/LDR.srcs/sources_1/ip/dat_mem/test_ram.coe
+add_files F:/LDR/LDR/LDR.srcs/sources_1/ip/ins_mem/test_rom.coe
+add_files F:/LDR/LDR/LDR.srcs/sources_1/ip/dat_mem/test_ram.coe
 read_verilog -library xil_defaultlib {
-  F:/LDR/LDR.srcs/sources_1/new/alu.v
-  F:/LDR/LDR.srcs/sources_1/new/controller.v
-  F:/LDR/LDR.srcs/sources_1/new/cpu.v
-  F:/LDR/LDR.srcs/sources_1/new/datapath.v
-  F:/LDR/LDR.srcs/sources_1/new/flop.v
-  F:/LDR/LDR.srcs/sources_1/new/flopen.v
-  F:/LDR/LDR.srcs/sources_1/new/flopenr.v
-  F:/LDR/LDR.srcs/sources_1/new/memorycontrol.v
-  F:/LDR/LDR.srcs/sources_1/new/mux2.v
-  F:/LDR/LDR.srcs/sources_1/new/mux3.v
-  F:/LDR/LDR.srcs/sources_1/new/mux4.v
-  F:/LDR/LDR.srcs/sources_1/new/regfile.v
-  F:/LDR/LDR.srcs/sources_1/new/computer.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/alu.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/controller.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/cpu.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/datapath.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/flop.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/flopen.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/flopenr.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/memorycontrol.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/mux2.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/mux3.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/mux4.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/regfile.v
+  F:/LDR/LDR/LDR.srcs/sources_1/new/computer.v
 }
-read_ip -quiet F:/LDR/LDR.srcs/sources_1/ip/dat_mem/dat_mem.xci
-set_property used_in_implementation false [get_files -all f:/LDR/LDR.srcs/sources_1/ip/dat_mem/dat_mem_ooc.xdc]
+read_ip -quiet F:/LDR/LDR/LDR.srcs/sources_1/ip/ins_mem/ins_mem.xci
+set_property used_in_implementation false [get_files -all f:/LDR/LDR/LDR.srcs/sources_1/ip/ins_mem/ins_mem_ooc.xdc]
 
-read_ip -quiet F:/LDR/LDR.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all f:/LDR/LDR.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/LDR/LDR.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all f:/LDR/LDR.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet F:/LDR/LDR/LDR.srcs/sources_1/ip/dat_mem/dat_mem.xci
+set_property used_in_implementation false [get_files -all f:/LDR/LDR/LDR.srcs/sources_1/ip/dat_mem/dat_mem_ooc.xdc]
 
-read_ip -quiet F:/LDR/LDR.srcs/sources_1/ip/ins_mem/ins_mem.xci
-set_property used_in_implementation false [get_files -all f:/LDR/LDR.srcs/sources_1/ip/ins_mem/ins_mem_ooc.xdc]
+read_ip -quiet F:/LDR/LDR/LDR.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all f:/LDR/LDR/LDR.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/LDR/LDR/LDR.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all f:/LDR/LDR/LDR.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -67,9 +67,11 @@ set_property used_in_implementation false [get_files -all f:/LDR/LDR.srcs/source
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc F:/LDR/LDR.srcs/constrs_1/new/design201807041105.xdc
-set_property used_in_implementation false [get_files F:/LDR/LDR.srcs/constrs_1/new/design201807041105.xdc]
+read_xdc F:/LDR/LDR/LDR.srcs/constrs_1/new/design201807041105.xdc
+set_property used_in_implementation false [get_files F:/LDR/LDR/LDR.srcs/constrs_1/new/design201807041105.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 

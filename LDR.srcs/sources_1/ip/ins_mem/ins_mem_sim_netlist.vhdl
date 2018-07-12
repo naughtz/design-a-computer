@@ -1,9 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Wed Jul 11 09:56:44 2018
+-- Date        : Wed Jul 11 09:56:43 2018
 -- Host        : DESKTOP-3QG18OL running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim F:/LDR/LDR.srcs/sources_1/ip/ins_mem/ins_mem_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top ins_mem -prefix
+--               ins_mem_ ins_mem_sim_netlist.vhdl
 -- Design      : ins_mem
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,8 +21,6 @@ entity ins_mem_blk_mem_gen_prim_wrapper_init is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of ins_mem_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end ins_mem_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of ins_mem_blk_mem_gen_prim_wrapper_init is
@@ -269,8 +268,6 @@ entity ins_mem_blk_mem_gen_prim_width is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of ins_mem_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end ins_mem_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of ins_mem_blk_mem_gen_prim_width is
@@ -294,8 +291,6 @@ entity ins_mem_blk_mem_gen_generic_cstr is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of ins_mem_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end ins_mem_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of ins_mem_blk_mem_gen_generic_cstr is
@@ -319,8 +314,6 @@ entity ins_mem_blk_mem_gen_top is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of ins_mem_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end ins_mem_blk_mem_gen_top;
 
 architecture STRUCTURE of ins_mem_blk_mem_gen_top is
@@ -344,8 +337,6 @@ entity ins_mem_blk_mem_gen_v8_4_1_synth is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of ins_mem_blk_mem_gen_v8_4_1_synth : entity is "blk_mem_gen_v8_4_1_synth";
 end ins_mem_blk_mem_gen_v8_4_1_synth;
 
 architecture STRUCTURE of ins_mem_blk_mem_gen_v8_4_1_synth is
@@ -574,8 +565,6 @@ entity ins_mem_blk_mem_gen_v8_4_1 is
   attribute C_WRITE_WIDTH_B of ins_mem_blk_mem_gen_v8_4_1 : entity is 32;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of ins_mem_blk_mem_gen_v8_4_1 : entity is "artix7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of ins_mem_blk_mem_gen_v8_4_1 : entity is "blk_mem_gen_v8_4_1";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of ins_mem_blk_mem_gen_v8_4_1 : entity is "yes";
 end ins_mem_blk_mem_gen_v8_4_1;

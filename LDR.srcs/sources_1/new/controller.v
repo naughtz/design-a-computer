@@ -15,6 +15,9 @@ module controller(
     parameter SLL = 6'b000000;
     parameter SRL = 6'b000010;
     parameter JR = 6'b001000;
+    parameter XOR = 6'b100110;
+    parameter SUB = 6'b100010;
+    
     parameter ADDI = 6'b001000;
     parameter ANDI = 6'b001100;
     parameter XORI = 6'b001110;
@@ -60,6 +63,8 @@ module controller(
                             6'b000000:  case(funct)
                                             ADD: nextstate <= REXE;
                                             OR:  nextstate <= REXE;
+                                            XOR: nextstate <= REXE;
+                                            SUB: nextstate <= REXE;
                                             SLL: nextstate <= SHIFTEXE;
                                             SRL: nextstate <= SHIFTEXE;
                                             JR:  nextstate <= JUMPCOM;
@@ -116,7 +121,11 @@ module controller(
             REXE:    
                 begin
                     ALUsrca <= 2'b01;
-                    if (funct==OR) ALUCon <= 3'b101;
+                    case(funct)
+                        OR: ALUCon <= 3'b101;
+                        SUB: ALUCon <= 3'b110;
+                        XOR: ALUCon <= 3'b011;
+                    endcase
                 end
             SHIFTEXE:  
                 begin

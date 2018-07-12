@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Wed Jul 11 10:00:14 2018
+| Date             : Thu Jul 12 10:53:45 2018
 | Host             : DESKTOP-3QG18OL running 64-bit major release  (build 9200)
 | Command          : report_power -file computer_power_routed.rpt -pb computer_power_summary_routed.pb -rpx computer_power_routed.rpx
 | Design           : computer
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.001 |        5 |       --- |             --- |
-| Slice Logic              |    <0.001 |     1094 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      577 |     20800 |            2.77 |
+| Slice Logic              |    <0.001 |     1096 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |      581 |     20800 |            2.79 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
 |   Register               |    <0.001 |      322 |     41600 |            0.77 |
 |   CARRY4                 |    <0.001 |        8 |      8150 |            0.10 |
 |   F7/F8 Muxes            |    <0.001 |       35 |     32600 |            0.11 |
 |   Others                 |     0.000 |       23 |       --- |             --- |
 |   LUT as Distributed RAM |     0.000 |       48 |      9600 |            0.50 |
-| Signals                  |    <0.001 |      915 |       --- |             --- |
+| Signals                  |    <0.001 |      909 |       --- |             --- |
 | Block RAM                |    <0.001 |        2 |        50 |            4.00 |
 | MMCM                     |     0.106 |        1 |         5 |           20.00 |
 | I/O                      |    <0.001 |       47 |       210 |           22.38 |
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.002 |      0.010 |
+| Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |
 | Vccaux    |       1.800 |     0.071 |       0.059 |      0.013 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
