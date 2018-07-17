@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Jul 12 10:56:55 2018">
+<application name="pa" timeStamp="Tue Jul 17 22:54:14 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="613331c6bf41444591fe530090f9013a" type="ProjectID"/>
 <property name="ProjectIteration" value="34" type="ProjectIteration"/>
@@ -37,7 +37,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="OpenRecentTarget" value="75" type="JavaHandler"/>
 <property name="OpenTarget" value="8" type="JavaHandler"/>
 <property name="ProgramDevice" value="32" type="JavaHandler"/>
-<property name="RecustomizeCore" value="85" type="JavaHandler"/>
+<property name="RecustomizeCore" value="89" type="JavaHandler"/>
 <property name="RefreshServer" value="3" type="JavaHandler"/>
 <property name="RefreshTarget" value="1" type="JavaHandler"/>
 <property name="ReportIPStatus" value="1" type="JavaHandler"/>
@@ -62,7 +62,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ViewLayoutCmd" value="2" type="JavaHandler"/>
 <property name="ViewTaskImplementation" value="2" type="JavaHandler"/>
 <property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
-<property name="ViewTaskSynthesis" value="16" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="17" type="JavaHandler"/>
 <property name="WaveformSaveConfiguration" value="6" type="JavaHandler"/>
 </item>
 <item name="Gui Handlers">
@@ -90,10 +90,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FPGAChooser_FPGA_TABLE" value="12" type="GuiHandlerData"/>
 <property name="FPGAChooser_PACKAGE" value="1" type="GuiHandlerData"/>
 <property name="FPGAChooser_SPEED" value="1" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="1017" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="1034" type="GuiHandlerData"/>
 <property name="FilterToolBar_SHOW_ALL" value="1" type="GuiHandlerData"/>
 <property name="FloatingTopDialog_IGNORE_AND_CONTINUE_WITH_INVALID_TOP" value="1" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="325" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="326" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_FIT" value="79" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_IN" value="128" type="GuiHandlerData"/>
@@ -197,7 +197,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SearchCommandComponent_QUICK_ACCESS" value="6" type="GuiHandlerData"/>
 <property name="SettingsDialog_OPTIONS_TREE" value="9" type="GuiHandlerData"/>
 <property name="SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT" value="3" type="GuiHandlerData"/>
-<property name="SignalTreePanel_SIGNAL_TREE_TABLE" value="308" type="GuiHandlerData"/>
+<property name="SignalTreePanel_SIGNAL_TREE_TABLE" value="319" type="GuiHandlerData"/>
 <property name="SimpleOutputProductDialog_APPLY_OPTIONS_AND_DISMISS_DIALOG_WITHOUT" value="4" type="GuiHandlerData"/>
 <property name="SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL" value="3" type="GuiHandlerData"/>
 <property name="SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY" value="58" type="GuiHandlerData"/>
@@ -220,7 +220,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="16" type="GuiHandlerData"/>
 <property name="TargetChooserPanel_ADD_XILINX_VIRTUAL_CABLE_AS_HARDWARE" value="2" type="GuiHandlerData"/>
 <property name="TargetChooserPanel_TARGET_CHOOSER_TABLE" value="7" type="GuiHandlerData"/>
-<property name="TaskBanner_CLOSE" value="100" type="GuiHandlerData"/>
+<property name="TaskBanner_CLOSE" value="101" type="GuiHandlerData"/>
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="4" type="GuiHandlerData"/>
 <property name="TouchpointSurveyDialog_YES" value="1" type="GuiHandlerData"/>
 <property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="109" type="GuiHandlerData"/>
@@ -228,9 +228,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="WaveformView_GOTO_TIME_0" value="7" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="31" type="GuiMode"/>
+<property name="GuiMode" value="33" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="26" type="TclMode"/>
+<property name="TclMode" value="28" type="TclMode"/>
 </item>
 </section>
 </application>

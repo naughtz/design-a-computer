@@ -2,65 +2,14 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Jul 12 10:33:19 2018
-# Process ID: 8324
+# Start of session at: Tue Jul 17 19:09:36 2018
+# Process ID: 7232
 # Current directory: F:/LDR/LDR
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1128 F:\LDR\LDR\LDR.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8284 F:\LDR\LDR\LDR.xpr
 # Log file: F:/LDR/LDR/vivado.log
 # Journal file: F:/LDR/LDR\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project F:/LDR/LDR/LDR.xpr
-set_property -dict [list CONFIG.Coe_File {f:/LDR/LDR/LDR.srcs/sources_1/ip/dat_mem/test_ram.coe}] [get_ips dat_mem]
-generate_target all [get_files  F:/LDR/LDR/LDR.srcs/sources_1/ip/dat_mem/dat_mem.xci]
-catch { config_ip_cache -export [get_ips -all dat_mem] }
-export_ip_user_files -of_objects [get_files F:/LDR/LDR/LDR.srcs/sources_1/ip/dat_mem/dat_mem.xci] -no_script -sync -force -quiet
-reset_run dat_mem_synth_1
-launch_runs -jobs 2 dat_mem_synth_1
-export_simulation -of_objects [get_files F:/LDR/LDR/LDR.srcs/sources_1/ip/dat_mem/dat_mem.xci] -directory F:/LDR/LDR/LDR.ip_user_files/sim_scripts -ip_user_files_dir F:/LDR/LDR/LDR.ip_user_files -ipstatic_source_dir F:/LDR/LDR/LDR.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/LDR/LDR/LDR.cache/compile_simlib/modelsim} {questa=F:/LDR/LDR/LDR.cache/compile_simlib/questa} {riviera=F:/LDR/LDR/LDR.cache/compile_simlib/riviera} {activehdl=F:/LDR/LDR/LDR.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-reset_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-set_property -dict [list CONFIG.Coe_File {f:/LDR/LDR/LDR.srcs/sources_1/ip/dat_mem/test_ram.coe}] [get_ips dat_mem]
-export_ip_user_files -of_objects  [get_files F:/LDR/LDR/LDR.srcs/sources_1/ip/dat_mem/test_ram_2.coe] -no_script -reset -force -quiet
-remove_files  F:/LDR/LDR/LDR.srcs/sources_1/ip/dat_mem/test_ram_2.coe
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-open_hw
-connect_hw_server
-disconnect_hw_server localhost:3121
-connect_hw_server -url localhost:3121
-current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/USB\VID_03FD&PID_0008\5&3414ED49&0&1]
-open_hw_target {localhost:3121/xilinx_tcf/Xilinx/USB\VID_03FD&PID_0008\5&3414ED49&0&1}
-set_property PROGRAM.FILE {F:/LDR/LDR/LDR.runs/impl_1/computer.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {F:/LDR/LDR/LDR.runs/impl_1/computer.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw
-set_property -dict [list CONFIG.Coe_File {f:/LDR/LDR/LDR.srcs/sources_1/ip/ins_mem/test_rom.coe}] [get_ips ins_mem]
-generate_target all [get_files  F:/LDR/LDR/LDR.srcs/sources_1/ip/ins_mem/ins_mem.xci]
-catch { config_ip_cache -export [get_ips -all ins_mem] }
-catch { [ delete_ip_run [get_ips -all ins_mem] ] }
-export_ip_user_files -of_objects [get_files F:/LDR/LDR/LDR.srcs/sources_1/ip/ins_mem/ins_mem.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] F:/LDR/LDR/LDR.srcs/sources_1/ip/ins_mem/ins_mem.xci]
-export_simulation -of_objects [get_files F:/LDR/LDR/LDR.srcs/sources_1/ip/ins_mem/ins_mem.xci] -directory F:/LDR/LDR/LDR.ip_user_files/sim_scripts -ip_user_files_dir F:/LDR/LDR/LDR.ip_user_files -ipstatic_source_dir F:/LDR/LDR/LDR.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/LDR/LDR/LDR.cache/compile_simlib/modelsim} {questa=F:/LDR/LDR/LDR.cache/compile_simlib/questa} {riviera=F:/LDR/LDR/LDR.cache/compile_simlib/riviera} {activehdl=F:/LDR/LDR/LDR.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 2
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {F:/LDR/LDR/LDR.runs/impl_1/computer.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {F:/LDR/LDR/LDR.runs/impl_1/computer.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_run synth_1 -name synth_1
+close_design

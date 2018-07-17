@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jul 17 16:31:22 2018
+# Process ID: 4704
+# Current directory: F:/LDR/LDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12608 F:\LDR\LDR\LDR.xpr
+# Log file: F:/LDR/LDR/vivado.log
+# Journal file: F:/LDR/LDR\vivado.jou
+#---------------------------------------------------------stsstart_gopen_project F:/LDR/LDR/LDR.xpr
+ScScanning sources..FiFinished scanning sourceININFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specifieINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.2/data/ip'.
+opopen_project: Time (s): cpu = 00:00:35 ; elapsed = 00:01:03 . Memory (MB): peak = 811.805 ; gain = 145.63exeINFO: [Device 21-403] Loading part xc7a35tcsg324-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 17 17:27:14 2018...
